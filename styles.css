@@ -1,0 +1,99 @@
+/* removing some default styles */
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+}
+
+/* adding page color */
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------styling calculator---------------- */
+.calculator{
+    height: auto;
+    width: 170px;
+    border:2px solid ;
+    background-color: #8338ec;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* styling display output */
+#display{
+    height:50px;
+    width: 150px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 8px;
+    margin: 5px auto 10px auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#display>span{
+    color: white;
+    font-weight: bolder;
+    font-size:25px   
+}
+
+/* designing number-pad */
+.number-pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+ 
+.number-pad>#btn-0{
+    flex:1;
+}
+.clear{
+    display: flex;
+    padding: 0 10px;
+}
+.clear>#clear,.clear>#undo{
+    flex: 1;
+    background-color: #fb5607;
+}
+
+
+/* designing buttons */
+button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 0;
+    margin: 2px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+button.number{
+    background-color: #ff006e;
+}
+
+button.operator{
+    background-color:#ffbe0b;
+}
+button#btn-equal{
+    background-color:#3a86ff ;
+}
+
