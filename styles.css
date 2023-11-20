@@ -23,7 +23,7 @@ body{
 /* ----------styling calculator---------------- */
 .calculator{
     height: auto;
-    width: 170px;
+    width: 250px;
     border:2px solid ;
     background-color: #8338ec;
     border-radius: 8px;
@@ -33,18 +33,28 @@ body{
 /* styling display output */
 #display{
     height:50px;
-    width: 150px;
+    width: 230px;
     background-color: rgb(255, 115, 0);
     border-radius: 8px;
     margin: 5px auto 10px auto;
     display: flex;
     justify-content: end;
-    align-items: end;
 }
 
 #display>span{
     color: white;
     font-weight: bolder;
+    display: block;
+}
+
+#display>#output{
+    align-self: flex-start;
+    text-align: end;
+    font-size:15px   
+}
+
+#display>#final-output{
+    align-self: flex-end;
     font-size:25px   
 }
 
@@ -72,14 +82,15 @@ body{
 
 /* designing buttons */
 button{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: 0;
     margin: 2px;
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
+    /* flex: 1; */
 }
 
 button:hover{
